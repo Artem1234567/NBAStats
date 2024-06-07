@@ -1,0 +1,9 @@
+I also want to add:
+- calculation of average statistics could be done in code, but SQL implementation gives faster work + more control. But we can use the calculation in AWS - maybe it will be even faster there.
+- I would add the implementation of the CQRS approach for the distribution of write commands from requests - this would provide the possibility of scaling, repairability.
+- I would add Data replication on different nodes, for the case of fault tolerance, but this could lead to data redundancy, but as a result we have a benefit - the risk of data loss is reduced.
+- also we can use CDN + Load Balancing for load distribution.
+- we can apply data compression and deduplication on AWS for long-term preservation.
+- with frequent database updates - we can periodically normalize the tables.
+- also use Amazon Elastic Block Store (EBS) - for cold starts-up or disaster recovery.
+- if possible, I would add Sleuth, distributed tracing, swagger for documentation.
